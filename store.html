@@ -54,76 +54,44 @@
         </div>
         </div>
     </nav>
-    <div class="container" style="background-color: rgba(114,162,214,0.57);">
+    <div class="container border rounded border-white" style="background-color: rgba(135,181,176,0.69);">
         <div>
-            <div class="container-fluid">
+            <div class="container-fluid" style="width: 585px;background-color: rgba(255,241,241,0.78);">
                 <hr>
                 <form action="javascript:void(0);" method="get" id="contactForm"><input class="form-control" type="hidden" name="Introduction" value="This email was sent from www.awebsite.com"><input class="form-control" type="hidden" name="subject" value="Awebsite.com Contact Form"><input class="form-control" type="hidden"
                         name="to" value="email@awebsite.com">
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <div id="successfail"></div>
-                        </div>
+                    <h2 class="h4"><i class="fa fa-envelope"></i> Contact Me<small><small class="required-input">&nbsp;(*required)</small></small>
+                    </h2>
+                    <div class="form-group"><label for="from-name">Name</label><span class="required-input">*</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user-o"></i></span></div><input class="form-control" type="text" name="name" required="" placeholder="Full Name" id="from-name"></div>
                     </div>
+                    <div class="form-group"><label for="from-email">Email</label><span class="required-input">*</span>
+                        <div class="input-group">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope-o"></i></span></div><input class="form-control" type="text" name="email" required="" placeholder="Email Address" id="from-email"></div>
+                    </div>
+                    <div class="form-group"><label for="from-comments">Comments</label><textarea class="form-control" rows="5" name="comments" placeholder="Enter Comments" id="from-comments"></textarea></div>
                     <div class="form-row">
-                        <div class="col-12 col-md-6" id="message">
-                            <h2 class="h4"><i class="fa fa-envelope"></i> Contact Me<small><small class="required-input">&nbsp;(*required)</small></small>
-                            </h2>
-                            <div class="form-group"><label for="from-name">Name</label><span class="required-input">*</span>
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                            <div class="form-group"><label for="from-phone">Phone</label><span class="required-input">*</span>
                                 <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user-o"></i></span></div><input class="form-control" type="text" name="name" required="" placeholder="Full Name" id="from-name"></div>
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input class="form-control" type="text" name="phone" required="" placeholder="Primary Phone" id="from-phone"></div>
                             </div>
-                            <div class="form-group"><label for="from-email">Email</label><span class="required-input">*</span>
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-envelope-o"></i></span></div><input class="form-control" type="text" name="email" required="" placeholder="Email Address" id="from-email"></div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-6">
-                                    <div class="form-group"><label for="from-phone">Phone</label><span class="required-input">*</span>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div><input class="form-control" type="text" name="phone" required="" placeholder="Primary Phone" id="from-phone"></div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-6">
-                                    <div class="form-group"><label for="from-calltime">Best Time to Call</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></div><select class="form-control" name="call time" id="from-calltime"><optgroup label="Best Time to Call"><option value="Morning" selected="">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></optgroup></select></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group"><label for="from-comments">Comments</label><textarea class="form-control" rows="5" name="comments" placeholder="Enter Comments" id="from-comments"></textarea></div>
-                            <div class="form-group">
-                                <div class="form-row">
-                                    <div class="col"><button class="btn btn-primary btn-block" type="reset" style="background-color: rgb(133,177,174);"><i class="fa fa-undo"></i> Reset</button></div>
-                                    <div class="col"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(133,177,174);">Submit <i class="fa fa-chevron-circle-right"></i></button></div>
-                                </div>
-                            </div>
-                            <hr class="d-flex d-md-none">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <h2 class="h4"><i class="fa fa-location-arrow"></i> Locate Me</h2>
-                            <div class="form-row">
-                                <div class="col-12">
-                                    <div class="static-map"><a href="https://www.google.com/maps/place/26%C2%B034'29.3%22N+88%C2%B049'29.9%22E/@26.5753278,88.8212468,16.37z/" target="_blank" rel="noopener"> <img class="img-fluid" alt="Google Map of My Home"></a></div>
-                                </div>
-                                <div class="col-sm-6 col-md-12 col-lg-6">
-                                    <h2 class="h4"><i class="fa fa-user"></i>&nbsp;My Info</h2>
-                                    <div><span>Aayush Agarwal<br></span></div>
-                                    <div><span>ayush.agarwalmng@gmail.com</span></div>
-                                    <div><span>www.aayush.com</span></div>
-                                    <hr class="d-sm-none d-md-block d-lg-none">
-                                </div>
-                                <div class="col-sm-6 col-md-12 col-lg-6">
-                                    <h2 class="h4"><i class="fa fa-location-arrow"></i>&nbsp;My Address</h2>
-                                    <div><span>C/O- Jaydeb Chakraborty</span></div>
-                                    <div><span>Anandanagar,Maynaguri</span></div>
-                                    <div><span>Jalpaiguri, West Bengal, 735224</span></div>
-                                    <div></div>
-                                    <hr class="d-sm-none">
-                                </div>
+                        <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+                            <div class="form-group"><label for="from-calltime">Best Time to Call</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-clock-o"></i></span></div><select class="form-control" name="call time" id="from-calltime"><optgroup label="Best Time to Call"><option value="Morning" selected="">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></optgroup></select></div>
                             </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col"><button class="btn btn-outline-primary btn-block border rounded border-white" type="reset" style="background-color: rgb(156,187,216);color: rgb(255,255,255);"><i class="fa fa-undo"></i> Reset</button></div>
+                            <div class="col"><button class="btn btn-outline-primary btn-block border rounded border-white" type="submit" style="background-color: rgb(156,187,216);color: rgb(255,255,255);">Submit <i class="fa fa-chevron-circle-right"></i></button></div>
+                        </div>
+                    </div>
+                    <hr class="d-flex d-md-none">
                 </form>
             </div>
             <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
@@ -205,7 +173,7 @@
                 </div>
             </div>
         </div>
-    </div><a class="btn btn-dark border rounded-circle" role="button" href="untitled-2.html" data-bs-hover-animate="flash" id="btndisclaimer" style="width: 50px;height: 50px;background-color: rgba(42,42,42,0.67);"><i class="icon ion-ios-lightbulb-outline" style="font-size: 29px;padding: 4px;margin: -6px;"></i></a>
+    </div>
     <footer>
         <div class="text-center social" style="height: 109px;background-color: #ffa8a8;padding: 19px;"><a class="btn btn-outline-secondary btn-sm border rounded-circle border-white shadow-sm" role="button" href="https://instagram.com/KylixMedusa" style="height: 40.5px;margin: 0px;width: 40.5px;"><i class="icon ion-social-instagram" style="font-size: 22px;margin: 0px;padding: 0px;height: auto;filter: blur(0px);"></i></a>
             <a
@@ -218,19 +186,20 @@
                 <p class="copyright" style="color: rgb(65,65,65);font-size: 22px;">Designed by me!!</p>
             </div>
     </footer>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/--mp--Animated-progress-bar-in-viewport-1.js"></script>
-    <script src="assets/js/--mp--Animated-progress-bar-in-viewport.js"></script>
-    <script src="assets/js/Scroll-To-Top-Button.js"></script>
-    <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
-    <script src="assets/js/Animated-Type-Heading.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
-    <script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
-    <script src="assets/js/current-day.js"></script>
-    <script src="assets/js/loader.js"></script>
-    <script src="assets/js/textslider.js"></script>
+    </footer><a class="btn btn-dark border rounded-circle" role="button" href="untitled-2.html" data-bs-hover-animate="flash" id="btndisclaimer" style="width: 50px;height: 50px;background-color: rgba(42,42,42,0.67);"><i class="icon ion-ios-lightbulb-outline" style="font-size: 29px;padding: 4px;margin: -6px;"></i></a>
+    <script
+        src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/--mp--Animated-progress-bar-in-viewport-1.js"></script>
+        <script src="assets/js/--mp--Animated-progress-bar-in-viewport.js"></script>
+        <script src="assets/js/Scroll-To-Top-Button.js"></script>
+        <script src="assets/js/3D_CSS_PROGRESS_BAR_BY_REDSTAPLER.js"></script>
+        <script src="assets/js/Animated-Type-Heading.js"></script>
+        <script src="assets/js/bs-animation.js"></script>
+        <script src="assets/js/Contact-Form-v2-Modal--Full-with-Google-Map.js"></script>
+        <script src="assets/js/current-day.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script src="assets/js/textslider.js"></script>
 </body>
 
 </html>
